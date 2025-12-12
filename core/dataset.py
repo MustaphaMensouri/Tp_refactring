@@ -1,5 +1,3 @@
-
-
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from typing import Tuple
@@ -17,8 +15,6 @@ def load_data(filepath: str) -> pd.DataFrame:
 
 
 def prepare_data(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.Series]:
-    
-
     X = df[FEATURE_COLUMNS]
     y = df[TARGET_COLUMN]
     return X, y
